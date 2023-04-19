@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   persons: string[] = ['Max', "Manuel", "Anna"];
 
+  onPersonCreate(name: string) {
+    this.persons.push(name);
+  }
+
 }

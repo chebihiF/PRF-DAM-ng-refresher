@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { PersonComponent } from './persons/persons.component';
 import { PersonInputComponent } from './persons/person-input.component';
 import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
