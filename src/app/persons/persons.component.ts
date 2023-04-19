@@ -1,4 +1,5 @@
 import { Component, Input } from "@angular/core";
+import { PersonService } from "./person.service";
 
 @Component({
   selector: 'app-persons',
@@ -6,7 +7,12 @@ import { Component, Input } from "@angular/core";
 })
 export class PersonComponent {
 
-  @Input()
   personList!: string[];
+
+  constructor(prsService: PersonService){ // IOC
+    this.personList = prsService.persons;
+  }
+
+
 
 }
